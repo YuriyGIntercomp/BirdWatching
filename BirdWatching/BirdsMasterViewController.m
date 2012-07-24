@@ -134,8 +134,8 @@
                                        viewControllers] objectAtIndex:0];
         addController.delegate = self;
     }
+    
 }
-
 -(void)addSightingViewControllerDidCancel:(AddSightingViewController *)controller {
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
