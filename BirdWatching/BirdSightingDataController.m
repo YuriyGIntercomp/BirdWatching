@@ -49,7 +49,7 @@
 -(void)addBirdSightingWithName:(NSString *)inputBirdName location:(NSString *)inputLocation {
     BirdSighting *sighting;
     NSDate *today = [NSDate date];
-    sighting = [[BirdSighting alloc] initWithName:inputBirdName location:inputLocation date:today];
+    sighting = [[BirdSighting alloc] initWithName:inputBirdName location:inputLocation created:today];
     [self.masterBirdSightingList addObject:sighting];
 }
 

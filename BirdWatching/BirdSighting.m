@@ -9,15 +9,15 @@
 #import "BirdSighting.h"
 
 @implementation BirdSighting
-@synthesize name = _name, location = _location, date = _date;
+@synthesize name = _name, location = _location, created = _created;
 
--(id)initWithName:(NSString *)name location:(NSString *)location date:(NSDate *)date
+-(id)initWithName:(NSString *)name location:(NSString *)location created:(NSDate *)created
 {
     self = [super init];
     if (self) {
         _name = name;
         _location = location;
-        _date = date;
+        _created = created;
         return self;
     }
     return nil;

@@ -41,8 +41,7 @@ locationLabel = _locationLabel, dateLabel = _dateLabel;
     if (theSighting) {
         self.birdNameLabel.text = theSighting.name;
         self.locationLabel.text = theSighting.location;
-        self.dateLabel.text = [formatter stringFromDate:(NSDate
-                                                         *)theSighting.date];
+        self.dateLabel.text = [formatter stringFromDate:(NSDate *)theSighting.created];
     }
 }
 

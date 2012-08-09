@@ -11,9 +11,9 @@
 @interface BirdSighting : NSObject
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *location;
-@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) NSDate *created;
 
--(id)initWithName:(NSString *)name location:(NSString *)location date:(NSDate *)date;
+-(id)initWithName:(NSString *)name location:(NSString *)location created:(NSDate *)created;
 
 
 @end

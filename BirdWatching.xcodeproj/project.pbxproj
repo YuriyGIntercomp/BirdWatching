@@ -10,6 +10,8 @@
 		57728E1C15B9E39D001FD1D0 /* BirdSighting.m in Sources */ = {isa = PBXBuildFile; fileRef = 57728E1B15B9E39D001FD1D0 /* BirdSighting.m */; };
 		57728E2015B9E91F001FD1D0 /* BirdSightingDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57728E1F15B9E91F001FD1D0 /* BirdSightingDataController.m */; };
 		57728E2315BDD94C001FD1D0 /* AddSightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57728E2215BDD94C001FD1D0 /* AddSightingViewController.m */; };
+		57BEDE9C15D30E7500057716 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BEDE9B15D30E7500057716 /* CoreData.framework */; };
+		57BEDEA015D30ED500057716 /* BirdWatching.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57BEDE9E15D30ED400057716 /* BirdWatching.xcdatamodeld */; };
 		57E9D5B515B9DD24000AABEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E9D5B415B9DD24000AABEA /* UIKit.framework */; };
 		57E9D5B715B9DD24000AABEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E9D5B615B9DD24000AABEA /* Foundation.framework */; };
 		57E9D5B915B9DD24000AABEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E9D5B815B9DD24000AABEA /* CoreGraphics.framework */; };
@@ -28,6 +30,8 @@
 		57728E1F15B9E91F001FD1D0 /* BirdSightingDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdSightingDataController.m; sourceTree = "<group>"; };
 		57728E2115BDD94C001FD1D0 /* AddSightingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSightingViewController.h; sourceTree = "<group>"; };
 		57728E2215BDD94C001FD1D0 /* AddSightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSightingViewController.m; sourceTree = "<group>"; };
+		57BEDE9B15D30E7500057716 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		57BEDE9F15D30ED500057716 /* BirdWatching.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BirdWatching.xcdatamodel; sourceTree = "<group>"; };
 		57E9D5B015B9DD24000AABEA /* BirdWatching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdWatching.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E9D5B415B9DD24000AABEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		57E9D5B615B9DD24000AABEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BEDE9C15D30E7500057716 /* CoreData.framework in Frameworks */,
 				57E9D5B515B9DD24000AABEA /* UIKit.framework in Frameworks */,
 				57E9D5B715B9DD24000AABEA /* Foundation.framework in Frameworks */,
 				57E9D5B915B9DD24000AABEA /* CoreGraphics.framework in Frameworks */,
@@ -79,6 +84,7 @@
 		57E9D5B315B9DD24000AABEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57BEDE9B15D30E7500057716 /* CoreData.framework */,
 				57E9D5B415B9DD24000AABEA /* UIKit.framework */,
 				57E9D5B615B9DD24000AABEA /* Foundation.framework */,
 				57E9D5B815B9DD24000AABEA /* CoreGraphics.framework */,
@@ -96,6 +102,7 @@
 				57E9D5C615B9DD24000AABEA /* MainStoryboard.storyboard */,
 				57728E1A15B9E39D001FD1D0 /* BirdSighting.h */,
 				57728E1B15B9E39D001FD1D0 /* BirdSighting.m */,
+				57BEDE9E15D30ED400057716 /* BirdWatching.xcdatamodeld */,
 				57E9D5C915B9DD24000AABEA /* BirdsMasterViewController.h */,
 				57E9D5CA15B9DD24000AABEA /* BirdsMasterViewController.m */,
 				57728E2115BDD94C001FD1D0 /* AddSightingViewController.h */,
@@ -188,6 +195,7 @@
 				57728E1C15B9E39D001FD1D0 /* BirdSighting.m in Sources */,
 				57728E2015B9E91F001FD1D0 /* BirdSightingDataController.m in Sources */,
 				57728E2315BDD94C001FD1D0 /* AddSightingViewController.m in Sources */,
+				57BEDEA015D30ED500057716 /* BirdWatching.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +310,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57BEDE9E15D30ED400057716 /* BirdWatching.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				57BEDE9F15D30ED500057716 /* BirdWatching.xcdatamodel */,
+			);
+			currentVersion = 57BEDE9F15D30ED500057716 /* BirdWatching.xcdatamodel */;
+			path = BirdWatching.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 57E9D5A715B9DD24000AABEA /* Project object */;
 }
