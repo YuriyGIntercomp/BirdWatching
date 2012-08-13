@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@class BirdSightingDataController;
-
 @interface BirdsMasterViewController : UITableViewController
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -19,5 +17,4 @@
 -(void)addBirdSightingWithName:(NSString *)inputBirdName location:(NSString *)inputLocation;
 -(void)saveContext;
 
-//@property (strong, nonatomic) BirdSightingDataController *dataController;
 @end

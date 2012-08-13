@@ -7,21 +7,19 @@
 //
 
 #import "BirdsMasterViewController.h"
-//#import "BirdSightingDataController.h"
 #import "BirdSighting.h"
 
 #import "BirdsDetailViewController.h"
 #import "AddSightingViewController.h"
 #import "BirdsAppDelegate.h"
 
-@interface BirdsMasterViewController () <NSFetchedResultsControllerDelegate, AddSightingViewControllerDelegate>
+@interface BirdsMasterViewController () <NSFetchedResultsControllerDelegate, AddSightingViewControllerDelegate, BirdDetailViewControllerDelegate>
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
 
 @implementation BirdsMasterViewController
 
-//@synthesize dataController = _dataController;
 @synthesize fetchedResultsController = _fetchedResultsController;
 @synthesize managedObjectContext = _managedObjectContext;
 
@@ -284,6 +282,13 @@
     //save the context
     [self saveContext];
 }
+
+- (void)birdDetailViewControllerDidFinish:(BirdsDetailViewController *)controller name:(NSString *)name location:(NSString *)location created:(NSString *)date
+{
+    NSLog(@"Entered delegate");
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 -(void)saveContext
 {
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];

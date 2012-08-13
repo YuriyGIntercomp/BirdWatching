@@ -15,8 +15,9 @@
 
 @implementation BirdsDetailViewController
 
-@synthesize sighting = _sighting, birdNameLabel = _birdNameLabel,
-locationLabel = _locationLabel, dateLabel = _dateLabel;
+@synthesize sighting = _sighting, birdNameInput = _birdNameInput,
+locationInput = _locationInput, dateInput = _dateInput;
+@synthesize delegate = _delegate;
 
 #pragma mark - Managing the detail item
 
@@ -39,9 +40,9 @@ locationLabel = _locationLabel, dateLabel = _dateLabel;
         [formatter setDateStyle:NSDateFormatterMediumStyle];
     }
     if (theSighting) {
-        self.birdNameLabel.text = theSighting.name;
-        self.locationLabel.text = theSighting.location;
-        self.dateLabel.text = [formatter stringFromDate:(NSDate *)theSighting.created];
+        self.birdNameInput.text = theSighting.name;
+        self.locationInput.text = theSighting.location;
+        self.dateInput.text = [formatter stringFromDate:(NSDate *)theSighting.created];
     }
 }
 
@@ -63,4 +64,8 @@ locationLabel = _locationLabel, dateLabel = _dateLabel;
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)done:(id)sender {
+    NSLog(@"Sent delegate");
+    [[self delegate] birdDetailViewControllerDidFinish:self name:self.birdNameInput.text location:self.locationInput.text created:self.dateInput.text];
+}
 @end

@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSManagedObjectContext *context = [self managedObjectContext];
+    //NSManagedObjectContext *context = [self managedObjectContext];
     //UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     //BirdsMasterViewController *firstViewController = (BirdsMasterViewController *)[[navigationController viewControllers] objectAtIndex:0];
     //BirdSightingDataController *aDataController = [[BirdSightingDataController alloc] init];
